@@ -5,16 +5,16 @@
 }
 
 :root {
-    --fundo: #11111c;
-    --fundo-2: #151522;
-    --card: #1a1a2a;
-    --card-2: #202033;
-    --texto: #f8f7ff;
-    --texto-suave: #a9a4b8;
-    --texto-fraco: #777184;
-    --roxo: #8758ff;
-    --roxo-2: #6d3fd9;
-    --roxo-claro: #b69cff;
+    --fundo: #080f1f;
+    --fundo-2: #0d1728;
+    --card: #101b2e;
+    --card-2: #15243b;
+    --texto: #f7fbff;
+    --texto-suave: #aab8ca;
+    --texto-fraco: #718098;
+    --azul: #38bdf8;
+    --azul-2: #2563eb;
+    --azul-claro: #9bdcff;
     --linha: rgba(255, 255, 255, 0.09);
     --sombra: 0 24px 60px rgba(0, 0, 0, 0.32);
     --raio: 18px;
@@ -31,7 +31,7 @@ body {
     line-height: 1.6;
     color: var(--texto);
     background:
-        radial-gradient(circle at 82% 18%, rgba(135, 88, 255, 0.16), transparent 26rem),
+        radial-gradient(circle at 82% 18%, rgba(56, 189, 248, 0.16), transparent 26rem),
         radial-gradient(circle at 16% 6%, rgba(95, 158, 173, 0.08), transparent 22rem),
         var(--fundo);
 }
@@ -43,8 +43,8 @@ body::before {
     z-index: -1;
     pointer-events: none;
     background:
-        linear-gradient(180deg, rgba(135, 88, 255, 0.72), rgba(135, 88, 255, 0) 1px),
-        linear-gradient(180deg, #11111c 0%, #141421 48%, #10101a 100%);
+        linear-gradient(180deg, rgba(56, 189, 248, 0.72), rgba(56, 189, 248, 0) 1px),
+        linear-gradient(180deg, #080f1f 0%, #0d1728 48%, #06101e 100%);
 }
 
 a {
@@ -57,7 +57,7 @@ a {
     position: fixed;
     top: 0;
     z-index: 20;
-    background: rgba(17, 17, 28, 0.82);
+    background: rgba(8, 15, 31, 0.82);
     border-bottom: 1px solid var(--linha);
     backdrop-filter: blur(16px);
 }
@@ -73,7 +73,7 @@ a {
 }
 
 .logo {
-    color: var(--roxo-claro);
+    color: var(--azul-claro);
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.02em;
@@ -133,7 +133,7 @@ a {
 
 .titulo-hero {
     margin-bottom: 10px;
-    color: var(--roxo);
+    color: var(--azul);
     font-size: clamp(40px, 4.8vw, 68px);
     font-weight: 900;
     line-height: 1;
@@ -194,15 +194,15 @@ a {
 
 .principal {
     color: #fff;
-    background: linear-gradient(135deg, var(--roxo), var(--roxo-2));
+    background: linear-gradient(135deg, var(--azul), var(--azul-2));
     border: 1px solid transparent;
-    box-shadow: 0 12px 26px rgba(135, 88, 255, 0.28);
+    box-shadow: 0 12px 26px rgba(56, 189, 248, 0.28);
 }
 
 .secundario {
     color: #fff;
     background: transparent;
-    border: 1px solid rgba(182, 156, 255, 0.76);
+    border: 1px solid rgba(155, 220, 255, 0.76);
 }
 
 .botao:hover,
@@ -212,7 +212,7 @@ a {
 }
 
 .secundario:hover {
-    background: rgba(135, 88, 255, 0.14);
+    background: rgba(56, 189, 248, 0.14);
 }
 
 .foto-sobre {
@@ -223,13 +223,13 @@ a {
     place-items: center;
     overflow: hidden;
     border-radius: 50%;
-    border: 12px solid var(--roxo);
+    border: 12px solid var(--azul);
     background:
         radial-gradient(circle at 50% 34%, rgba(255, 255, 255, 0.12), transparent 22%),
-        linear-gradient(145deg, rgba(135, 88, 255, 0.52), rgba(77, 25, 125, 0.72)),
+        linear-gradient(145deg, rgba(56, 189, 248, 0.52), rgba(10, 70, 130, 0.72)),
         var(--card);
     box-shadow:
-        0 0 0 1px rgba(182, 156, 255, 0.18),
+        0 0 0 1px rgba(155, 220, 255, 0.18),
         0 34px 90px rgba(0, 0, 0, 0.42);
 }
 
@@ -249,7 +249,7 @@ a {
 }
 
 .subtitulo {
-    color: var(--roxo-claro);
+    color: var(--azul-claro);
     font-size: 11px;
     font-weight: 800;
     line-height: 1.35;
@@ -312,7 +312,7 @@ h2 {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: radial-gradient(circle at 18% 0%, rgba(135, 88, 255, 0.17), transparent 18rem);
+    background: radial-gradient(circle at 18% 0%, rgba(56, 189, 248, 0.17), transparent 18rem);
 }
 
 .card h3,
@@ -342,9 +342,9 @@ h2 {
 }
 
 .tags span {
-    color: var(--roxo-claro);
-    background: rgba(135, 88, 255, 0.09);
-    border: 1px solid rgba(135, 88, 255, 0.22);
+    color: var(--azul-claro);
+    background: rgba(56, 189, 248, 0.09);
+    border: 1px solid rgba(56, 189, 248, 0.22);
     border-radius: 999px;
     padding: 5px 9px;
     font-size: 10.5px;
@@ -358,13 +358,13 @@ h2 {
     margin-top: 14px;
     padding: 9px 13px;
     color: var(--texto);
-    background: rgba(135, 88, 255, 0.10);
-    border: 1px solid rgba(135, 88, 255, 0.28);
+    background: rgba(56, 189, 248, 0.10);
+    border: 1px solid rgba(56, 189, 248, 0.28);
 }
 
 .card a:hover {
-    background: var(--roxo);
-    border-color: var(--roxo);
+    background: var(--azul);
+    border-color: var(--azul);
 }
 
 #projetos .card::after {
@@ -374,7 +374,7 @@ h2 {
     z-index: 3;
     opacity: 0;
     pointer-events: none;
-    background: rgba(17, 17, 28, 0.86);
+    background: rgba(8, 15, 31, 0.86);
     transition: opacity 0.22s ease;
 }
 
@@ -392,7 +392,7 @@ h2 {
     pointer-events: none;
     transform: translate(-50%, -42%);
     color: #fff;
-    background: linear-gradient(135deg, var(--roxo), var(--roxo-2));
+    background: linear-gradient(135deg, var(--azul), var(--azul-2));
     border-color: transparent;
     box-shadow: 0 18px 34px rgba(0, 0, 0, 0.35);
 }
@@ -400,7 +400,7 @@ h2 {
 #projetos .card:hover,
 #projetos .card:focus-within {
     transform: translateY(-5px);
-    border-color: rgba(135, 88, 255, 0.42);
+    border-color: rgba(56, 189, 248, 0.42);
     box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
 }
 
@@ -420,6 +420,198 @@ h2 {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%);
+}
+
+
+.mapas-tematicos {
+    position: relative;
+}
+
+.grade-mapas {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.card-mapa {
+    overflow: hidden;
+    border: 1px solid var(--linha);
+    border-radius: var(--raio);
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.016)),
+        var(--card);
+    box-shadow: var(--sombra);
+    transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.card-mapa:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.42);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
+}
+
+.mapa-preview {
+    position: relative;
+    display: block;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--fundo-2);
+}
+
+.mapa-preview img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+.mapa-preview::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background: rgba(8, 15, 31, 0.72);
+    transition: opacity 0.22s ease;
+}
+
+.mapa-preview span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    opacity: 0;
+    padding: 9px 13px;
+    border-radius: 999px;
+    color: #fff;
+    background: linear-gradient(135deg, var(--azul), var(--azul-2));
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: lowercase;
+    white-space: nowrap;
+    transform: translate(-50%, -42%);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.mapa-preview:hover img {
+    transform: scale(1.05);
+    opacity: 0.72;
+}
+
+.mapa-preview:hover::after,
+.mapa-preview:hover span {
+    opacity: 1;
+}
+
+.mapa-preview:hover span {
+    transform: translate(-50%, -50%);
+}
+
+.conteudo-mapa {
+    padding: 16px;
+}
+
+.conteudo-mapa h3 {
+    margin-bottom: 8px;
+    color: var(--texto);
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+.conteudo-mapa p {
+    margin-bottom: 14px;
+    color: var(--texto-suave);
+    font-size: 11.8px;
+    line-height: 1.55;
+}
+
+.botao-download-mapa,
+.baixar-lightbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    color: var(--texto);
+    background: rgba(56, 189, 248, 0.10);
+    border: 1px solid rgba(56, 189, 248, 0.28);
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.botao-download-mapa {
+    padding: 9px 12px;
+}
+
+.botao-download-mapa:hover,
+.baixar-lightbox:hover {
+    transform: translateY(-2px);
+    background: var(--azul);
+    border-color: var(--azul);
+}
+
+.lightbox-mapa {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 28px 86px;
+    background: rgba(3, 8, 18, 0.92);
+    backdrop-filter: blur(14px);
+}
+
+.lightbox-mapa:target {
+    display: flex;
+}
+
+.lightbox-mapa img {
+    max-width: min(1120px, 92vw);
+    max-height: 78vh;
+    display: block;
+    object-fit: contain;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 18px;
+    background: var(--fundo-2);
+    box-shadow: 0 34px 90px rgba(0, 0, 0, 0.58);
+}
+
+.fechar-lightbox {
+    position: fixed;
+    top: 24px;
+    right: 26px;
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--texto);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--linha);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.fechar-lightbox:hover {
+    background: rgba(56, 189, 248, 0.16);
+    border-color: rgba(56, 189, 248, 0.52);
+}
+
+.baixar-lightbox {
+    position: fixed;
+    left: 50%;
+    bottom: 28px;
+    padding: 12px 17px;
+    transform: translateX(-50%);
+}
+
+.baixar-lightbox:hover {
+    transform: translateX(-50%) translateY(-2px);
 }
 
 .contato {
@@ -459,8 +651,8 @@ h2 {
 }
 
 .links-contato a:hover {
-    background: rgba(135, 88, 255, 0.16);
-    border-color: rgba(135, 88, 255, 0.55);
+    background: rgba(56, 189, 248, 0.16);
+    border-color: rgba(56, 189, 248, 0.55);
 }
 
 .links-contato svg {
@@ -485,7 +677,7 @@ h2 {
     color: var(--texto-fraco);
     font-size: 11px;
     text-align: center;
-    background: rgba(17, 17, 28, 0.72);
+    background: rgba(8, 15, 31, 0.72);
 }
 
 @media (max-width: 940px) {
@@ -503,6 +695,10 @@ h2 {
     .grade-produtos,
     #produtos .grade-projetos {
         grid-template-columns: 1fr;
+    }
+
+    .grade-mapas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -551,5 +747,13 @@ h2 {
     .botao,
     .links-contato a {
         width: 100%;
+    }
+
+    .grade-mapas {
+        grid-template-columns: 1fr;
+    }
+
+    .lightbox-mapa {
+        padding: 70px 18px 82px;
     }
 }
